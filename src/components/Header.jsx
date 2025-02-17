@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { ImSearch } from "react-icons/im";
 import { VscAccount } from "react-icons/vsc";
@@ -39,12 +39,10 @@ const Header = () => {
       <div className="hidden md:flex px-10 py-2 justify-between items-center bg-black">
         <div className="flex-shrink-0">
           <Link to="/">
-          <motion.img
+          <img
       src={logo}
-      alt="3D Rotating Logo"
+      alt="logo"
       className="h-7"
-      animate={{ rotateY: [0, 180, 360] }}
-      transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
     />
           </Link>
         </div>

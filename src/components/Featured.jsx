@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Shirt, Star, Package } from "lucide-react";
-import art8 from "../assets/art/art8.png";
+import art8 from "../assets/art/art8.webp";
 
 const Featured = () => {
   return (

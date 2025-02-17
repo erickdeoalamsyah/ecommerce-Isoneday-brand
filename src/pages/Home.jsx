@@ -6,6 +6,7 @@ import Featured from "../components/Featured";
 import FutureProduct from "../components/FutureProduct";
 import Art from "../components/Art";
 import Footer from "../components/Footer";
+import Scroll from "../components/Scroll";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <div className="flex flex-col min-h-screen ">
         <Header />
         <Hero />
+        <Scroll/>
         <div className="bg-gradient-to-t from-black to-red-900">
         <Product />
         </div>

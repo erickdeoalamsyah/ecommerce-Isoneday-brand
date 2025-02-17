@@ -10,7 +10,7 @@ const About = () => {
     <Header/>
     <section className="container mx-auto max-w-7xl bg-gradient-to-b from-black to-red-900 text-white py-[4rem] font-[orbitron]">
     <div className="fixed inset-0 -z-10">
-          <div class="relative h-full w-full bg-gradient-to-b from-black to-red-900">
+          <div className="relative h-full w-full bg-gradient-to-b from-black to-red-900">
           </div>
         </div>
       <div className="px-4 md:px-6 lg:px-40">

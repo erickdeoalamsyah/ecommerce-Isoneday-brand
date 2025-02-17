@@ -1,19 +1,19 @@
-import fp1 from "../assets/featured/fp1.png";
-import fp2 from "../assets/featured/fp2.png";
-import fp3 from "../assets/featured/fp3.png";
-import fp4 from "../assets/featured/fp4.png";
-import fp5 from "../assets/featured/fp5.png";
-import fp5_5 from "../assets/featured/fp5-5.png";
-import fp6 from "../assets/featured/fp6.png";
-import fp7 from "../assets/featured/fp7.png";
-import fp7_7 from "../assets/featured/fp7-7.png";
-import fp8 from "../assets/featured/fp8.png";
-import fp8_8 from "../assets/featured/fp8-8.png";
-import fp9 from "../assets/featured/fp9.png";
-import fp10 from "../assets/featured/fp10.png";
-import fp10_10 from "../assets/featured/fp10-10.png";
-import fp11 from "../assets/featured/fp11.png";
-import fp12 from "../assets/featured/fp12.png";
+import fp1 from "../assets/featured/fp1.webp";
+import fp2 from "../assets/featured/fp2.webp";
+import fp3 from "../assets/featured/fp3.webp";
+import fp4 from "../assets/featured/fp4.webp";
+import fp5 from "../assets/featured/fp5.webp";
+import fp5_5 from "../assets/featured/fp5-5.webp";
+import fp6 from "../assets/featured/fp6.webp";
+import fp7 from "../assets/featured/fp7.webp";
+import fp7_7 from "../assets/featured/fp7-7.webp";
+import fp8 from "../assets/featured/fp8.webp";
+import fp8_8 from "../assets/featured/fp8-8.webp";
+import fp9 from "../assets/featured/fp9.webp";
+import fp10 from "../assets/featured/fp10.webp";
+import fp10_10 from "../assets/featured/fp10-10.webp";
+import fp11 from "../assets/featured/fp11.webp";
+import fp12 from "../assets/featured/fp12.webp";
 
 const products = [
   {
@@ -116,7 +116,7 @@ const products = [
 // baru
   {
     id: 17,
-    name: "Unknown Isoneday Flower",
+    name: "Isoneday Flower",
     price: "145k",
     src: [fp7, fp7_7, fp7, fp7_7],
     description:
@@ -132,7 +132,7 @@ const products = [
   },
   {
     id: 18,
-    name: "Unknown Isoneday Flower",
+    name: "Isoneday Flower",
     price: "145k",
     src: [fp8, fp8_8, fp8, fp8_8],
     description:

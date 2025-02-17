@@ -1,16 +1,14 @@
-import art1 from "../assets/art/art1.png";
-import art2 from "../assets/art/art2.png";
-import art3 from "../assets/art/art3.png";
-import art4 from "../assets/art/art4.png";
-import art5 from "../assets/art/art5.png";
-import art6 from "../assets/art/art6.png";
-import art7 from "../assets/art/art7.png";
-import art8 from "../assets/art/art8.png";
-import art9 from "../assets/art/art9.png";
-import art10 from "../assets/art/art10.png";
-import art11 from "../assets/art/art11.png";
-import art12 from "../assets/art/art12.png";
-import art13 from "../assets/art/art13.png";
+import art1 from "../assets/art/art1.webp";
+import art2 from "../assets/art/art2.webp";
+import art3 from "../assets/art/art3.webp";
+import art4 from "../assets/art/art4.webp";
+import art5 from "../assets/art/art5.webp";
+import art6 from "../assets/art/art6.webp";
+import art7 from "../assets/art/art7.webp";
+import art8 from "../assets/art/art8.webp";
+import art9 from "../assets/art/art9.webp";
+import art10 from "../assets/art/art10.webp";
+import art11 from "../assets/art/art11.webp";
  
 
 const art = [
@@ -68,16 +66,6 @@ const art = [
         name:"Art11",
         image:art11
     },
-    {
-        id:12,
-        name:"Art12",
-        image:art12
-    },
-    {
-        id:13,
-        name:"Art13",
-        image:art13
-    }
 
 ]
 export default art;

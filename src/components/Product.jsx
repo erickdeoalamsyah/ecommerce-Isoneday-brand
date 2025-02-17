@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import products from "../data/products";
 import { Link } from "react-router-dom";
 
@@ -13,22 +12,16 @@ const Sticker = () => {
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 max-w-7xl mx-auto">
         {products.map((product, index) => (
-          <motion.div
-          key={product.id}
-          whileInView={{ opacity: 1, scale: 1 }}
-          initial={{ opacity: 0, scale: 0.9 }}
-          transition={{
-            duration: 0.2,         
-            delay: index * 0.1,   
-          }}
-            className="relative text-xs rounded-lg  shadow-lg bg-black/50 flex flex-col items-center text-center overflow-hidden group transition-all duration-300 ease-in-out hover:bg-gradient-to-b from-black to-red-900"
-          >
+          <div key={product.id} className="relative text-xs rounded-lg  shadow-lg bg-black/50 flex flex-col items-center text-center overflow-hidden group transition-all duration-300 ease-in-out hover:bg-gradient-to-b from-black to-red-900">
             {product.soldOut && (
               <span className="absolute top-3 left-3 bg-red-600 text-white text-sm font-semibold px-2 py-1 rounded-full z-10">
                 SOLD OUT
               </span>
             )}
-            <div className="w-full p-2 aspect-square flex items-center justify-center border-b border-red-600 relative overflow-hidden transition-shadow duration-300 ease-in-out">
+            <div
+              className="w-full p-2 aspect-square flex items-center justify-center border-b border-red-600 relative overflow-hidden transition-shadow duration-300 ease-in-out"
+              onClick={() => (window.location.href = `/product/${product.id}`)} // Tambahkan klik langsung ke detail
+            >
               <img
                 src={Array.isArray(product.src) ? product.src[0] : product.src}
                 alt={product.name}
@@ -40,21 +33,27 @@ const Sticker = () => {
                   src={product.src[1]}
                   alt={product.name}
                   loading="lazy"
-                  className="w-full h-auto max-h-200  object-cover transition-all duration-300 ease-in opacity-0 group-hover:opacity-100 absolute top-0 left-0"
+                  className="w-full p-2 h-auto max-h-200 object-cover transition-all duration-300 ease-in opacity-0 group-hover:opacity-100 absolute top-0 left-0"
+                  onClick={() =>
+                    (window.location.href = `/product/${product.id}`)
+                  } // Tambahkan klik
                 />
               )}
+
+              {/* Pastikan Link berada di atas */}
               <Link
                 to={`/product/${product.id}`}
-                className="absolute text-xs bottom-1 left-1/2 transform -translate-x-1/2 translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in bg-black text-white font-semibold p-2 rounded-lg opacity-0 group-hover:opacity-100 hover:bg-red-600"
+                className="absolute text-xs bottom-1 left-1/2 transform -translate-x-1/2 translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in bg-black text-white font-semibold p-2 rounded-lg opacity-0 group-hover:opacity-100 hover:bg-red-600 z-20"
               >
                 View Detail
               </Link>
             </div>
+
             <h2 className="font-bold text-gray-300 tracking-widest mt-2">
               {product.name}
             </h2>
             <p className="text-gray-300 py-2">{product.price}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>
