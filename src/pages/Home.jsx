@@ -19,7 +19,7 @@ const Home = () => {
         <Product />
         </div>
         <Featured />
-        <FutureProduct />
+        {/* <FutureProduct /> */}
         <Art />
         <div className="bg-gradient-to-t from-black to-red-900">
         <Footer/>

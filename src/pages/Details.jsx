@@ -119,14 +119,31 @@ const Details = () => {
               +
             </button>
           </div>
-          <Link
+          {/* <Link
             to="https://s.shopee.co.id/BC7H4aOG2"
             className="w-[70%] text-white bg-black py-2 hover:bg-white border-2 border-gray-400 hover:text-black transition-all"
           >
             <button className="w-full h-full flex items-center  justify-center">
               SHOP
             </button>
-          </Link>
+          </Link> */}
+                    {product.is_sold ? (
+            <button
+              disabled
+              className="w-[70%] flex items-center justify-center font-bold text-red-600 bg-red-300 py-2 border-2 border-gray-600 cursor-not-allowed opacity-60"
+            >
+              SOLD OUT
+            </button>
+          ) : (
+            <Link
+              to="https://s.shopee.co.id/BC7H4aOG2"
+              className="w-[70%] text-white bg-black py-2 hover:bg-white border-2 border-gray-400 hover:text-black transition-all"
+            >
+              <button className="w-full h-full flex items-center justify-center">
+                SHOP
+              </button>
+            </Link>
+          )}
         </div>
 
         <div className="pt-4 text-xs text-gray-300 space-y-2">

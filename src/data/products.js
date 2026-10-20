@@ -13,8 +13,24 @@ import kaos7 from "../assets/product/kaos7.webp";
 import kaos8 from "../assets/product/kaos8.webp";
 import kaos9 from "../assets/product/kaos9.webp";
 import kaos9_9 from "../assets/product/kaos9-9.webp";
+import kaos10_1 from "../assets/product/kaos10-1.png";
+import kaos10_2 from "../assets/product/kaos10-2.png";
+import long_sleve from "../assets/product/longsleve.png";
+import pin_button_pack from "../assets/product/pin-button-pack.png";
+import pin_button_pack_2 from "../assets/product/pin-button-pack-2-.png";
 import topi1 from "../assets/product/topi1.webp";
 import topi1_1 from "../assets/product/topi1-1.webp";
+import topi2_1 from "../assets/product/topi2-1.png";
+import topi2_2 from "../assets/product/topi2-2.png";
+import topi3_1 from "../assets/product/topi3-1.png";
+import topi3_2 from "../assets/product/topi3-2.png";
+import topi4_1 from "../assets/product/topi4-1.png";
+import topi4_2 from "../assets/product/topi4-2.png";
+import topi5_1 from "../assets/product/topi5-1.png";
+import topi5_2 from "../assets/product/topi5-2.png";
+import topi6_1 from "../assets/product/topi6-1.png";
+import topi6_2 from "../assets/product/topi6-2.png";
+
 
 const products = [
   {
@@ -31,7 +47,8 @@ const products = [
     sizes: ["M", "L", "XL"],
     color: "White",
     storage: "Warehouse 1",
-    reviews: 137,
+    reviews: 1,
+    is_sold: true
   },
   {
     id: 2,
@@ -47,7 +64,8 @@ const products = [
     sizes: ["M", "L", "XL"],
     color: "Black",
     storage: "Warehouse 1",
-    reviews: 137,
+    reviews: 1,
+    is_sold: true
   },
   {
     id: 3,
@@ -63,7 +81,8 @@ const products = [
     sizes: ["M", "L", "XL"],
     color: "White",
     storage: "Warehouse 1",
-    reviews: 137,
+    reviews: 1,
+    is_sold: true
   },
   {
     id: 4,
@@ -78,7 +97,8 @@ const products = [
     sizes: ["M", "L", "XL"],
     color: "Red",
     storage: "Warehouse 1",
-    reviews: 137,
+    reviews: 2,
+    is_sold: false
   },
   {
     id: 5,
@@ -93,7 +113,8 @@ const products = [
     sizes: ["M", "L", "XL"],
     color: "Black",
     storage: "Warehouse 1",
-    reviews: 137,
+    reviews: 1,
+    is_sold: true
   },
   {
     id: 6,
@@ -108,7 +129,8 @@ const products = [
     sizes: ["M", "L", "XL"],
     color: "Black",
     storage: "Warehouse 1",
-    reviews: 137,
+    reviews: 1,
+    is_sold: true
   },
   {
     id: 7,
@@ -123,7 +145,8 @@ const products = [
     sizes: ["M", "L", "XL"],
     color: "Army",
     storage: "Warehouse 1",
-    reviews: 137,
+    reviews: 1,
+    is_sold: true
   },
   {
     id: 8,
@@ -139,6 +162,7 @@ const products = [
     color: "White",
     storage: "Warehouse 1",
     reviews: 137,
+    is_sold: true
   },
   {
     id: 9,
@@ -155,7 +179,6 @@ const products = [
     storage: "Warehouse 1",
     reviews: 137,
     soldOut:true
-
   },
   {
     id: 10,
@@ -171,6 +194,135 @@ const products = [
     color: "Black",
     storage: "Warehouse 1",
     reviews: 137,
+    is_sold: true
+  },
+  {
+    id: 11,
+    name: "Piton Six Panel Caps | Green",
+    price: "155k",
+    src: [topi2_1, topi2_2, topi2_1, topi2_2],
+    description: "Six panel cap ISONEDAY.",
+    categories: ["Streetwear", "Cap", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "100-120 g",
+    dimension: "P: 20-24 cm, L: 25-29 cm",
+    sizes: ["All Size"],
+    color: "Green",
+    storage: "Warehouse 1",
+    reviews: 32,
+    is_sold: false
+  },
+  {
+    id: 12,
+    name: "Honey Six Panel Caps | Red",
+    price: "155k",
+    src: [topi3_1, topi3_2, topi3_1, topi3_2],
+    description: "Six panel cap ISONEDAY.",
+    categories: ["Streetwear", "Cap", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "100-120 g",
+    dimension: "P: 20-24 cm, L: 25-29 cm",
+    sizes: ["All Size"],
+    color: "Red",
+    storage: "Warehouse 1",
+    reviews: 69,
+    is_sold: false
+  },
+  {
+    id: 13,
+    name: "Celsi Six Panel Caps | Blue",
+    price: "160k",
+    src: [topi4_1, topi4_2, topi4_1, topi4_2],
+    description: "Six panel cap ISONEDAY.",
+    categories: ["Streetwear", "cap", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "100-120 g",
+    dimension: "P: 20-24 cm, L: 25-29 cm",
+    sizes: ["All Size"],
+    color: "Purple",
+    storage: "Warehouse 1",
+    reviews: 10,
+    is_sold: false
+  },
+  {
+    id: 14,
+    name: "Deo Trucker Caps | Rainbow",
+    price: "160k",
+    src: [topi5_1, topi5_2, topi5_1, topi5_2],
+    description: "Trucker cap ISONEDAY.",
+    categories: ["Streetwear", "Trucker Hat", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "100-120 g",
+    dimension: "P: 20-24 cm, L: 25-29 cm",
+    sizes: ["All Size"],
+    color: "Rainbow",
+    storage: "Warehouse 1",
+    reviews: 1,
+    is_sold: false
+  },
+  {
+    id: 15,
+    name: "Rookie Trucker Caps | Purple",
+    price: "155k",
+    src: [topi6_1, topi6_2, topi6_1, topi6_2],
+    description: "Trucker cap ISONEDAY.",
+    categories: ["Streetwear", "Trucker Hat", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "100-120 g",
+    dimension: "P: 20-24 cm, L: 25-29 cm",
+    sizes: ["All Size"],
+    color: "Blue",
+    storage: "Warehouse 1",
+    reviews: 24,
+    is_sold: false
+  },
+  {
+    id: 16,
+    name: "PPRZI Lana Del Rey Black T-Shirt",
+    price: "195k",
+    src: [kaos10_1, kaos10_2, kaos10_1, kaos10_2],
+    description: "T-shirt ISONEDAY.",
+    categories: ["Streetwear", "T-shirt", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "130-150 g",
+    dimension: "P: 42-48 cm, L: 58-64 cm",
+    sizes: ["M", "L", "XL"],
+    color: "Black",
+    storage: "Warehouse 1",
+    reviews: 8,
+    is_sold: false
+  },
+  {
+    id: 17,
+    name: "Pin Button Pack 002",
+    price: "55k",
+    src: [pin_button_pack, pin_button_pack_2, pin_button_pack, pin_button_pack_2],
+    description: "Pin button pack ISONEDAY.",
+    categories: ["Streetwear", "Accessories", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "20-30 g",
+    dimension: "Diameter 3-4 cm",
+    sizes: ["One Size"],
+    color: "Mixed",
+    storage: "Warehouse 1",
+    reviews: 10,
+    is_sold: false
+  },
+  {
+    id: 18,
+    name: "Driving Out of Town Black Longsleeve",
+    price: "225k",
+    src: [long_sleve, long_sleve, long_sleve, long_sleve],
+    description: "Longsleeve T-shirt ISONEDAY.",
+    categories: ["Streetwear", "Longsleeve", "Unisex"],
+    tags: ["street", "fashion"],
+    weight: "180-200 g",
+    dimension: "P: 42-48 cm, L: 58-64 cm",
+    sizes: ["M", "L", "XL"],
+    color: "Black",
+    storage: "Warehouse 1",
+    reviews: 7,
+    is_sold: false
   },
 ];
 
